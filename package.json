@@ -1,0 +1,28 @@
+{
+  "name": "golf-score",
+  "version": "0.0.0",
+  "description": "A web utility app that keeps track of score during a session of minigolf.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OneFabric/golf-score.git"
+  },
+  "keywords": [
+    "web",
+    "app",
+    "utility",
+    "js"
+  ],
+  "author": "OneFabric",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/OneFabric/golf-score/issues"
+  },
+  "homepage": "https://github.com/OneFabric/golf-score#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

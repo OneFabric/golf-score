@@ -12,10 +12,16 @@
         <p>Number of Players: </p>
         <input type="number" id="noOfPlayers" value="3">
 
-        
+        <p>Name of Session:</p>
+        <Input type="text" id="nameOfSession">
+
+        <p>Number of holes:</p>
+        <input type="number" id="noOfHoles" value="18">
+
+
         <button
             type="button"
-            onClick=submit(document.getElementById("noOfPlayers").value)>
+            onClick=submit(document.getElementById("noOfPlayers").value,document.getElementById("nameOfSession").value,document.getElementById("noOfHoles").value)>
             Start session!
         </button>
 

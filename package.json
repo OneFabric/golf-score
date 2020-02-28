@@ -3,6 +3,9 @@
   "version": "0.0.0",
   "description": "A web utility app that keeps track of score during a session of minigolf.",
   "main": "code/serverSide/server.js",
+  "engines": {
+    "node": "10.15.3"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

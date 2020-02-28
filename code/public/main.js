@@ -25,7 +25,7 @@ function submit(numberOfPlayers, nameOfSession, numberOfHoles)
 
     alert("Opening page!")
     // https://stackoverflow.com/questions/8454510/open-url-in-same-window-and-in-same-tab
-    window.open("../pages/setup.html","_self")
+    window.open("./setup.html","_self")
 
    alert("page opened!")
 
@@ -88,7 +88,7 @@ function printPage() {
                         session.players.push(p)
                     }
                     localStorage.sessionInStorage = JSON.stringify(session)
-                    var _ = window.open("../pages/process.html",'_self')
+                    var _ = window.open("process.html",'_self')
                     // proceed(session)
                 }
                

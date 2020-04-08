@@ -16,22 +16,22 @@ function submit(numberOfPlayers, nameOfSession, numberOfHoles)
     session.numberOfHoles = numberOfHoles
     session.nameOfSession = nameOfSession
     
-    alert(
-            "The number of players are: "+session.numberOfPlayers+"\n"
-            + "The name of the session is: "+session.nameOfSession+"\n"
-            + "The number of Holes are: "+session.numberOfHoles
-        )
+    // alert(
+    //         "The number of players are: "+session.numberOfPlayers+"\n"
+    //         + "The name of the session is: "+session.nameOfSession+"\n"
+    //         + "The number of Holes are: "+session.numberOfHoles
+    //     )
 
 
-    alert("Opening page!")
+    // alert("Opening page!")
     // https://stackoverflow.com/questions/8454510/open-url-in-same-window-and-in-same-tab
     window.open("./setup.html","_self")
 
-   alert("page opened!")
+//    alert("page opened!")
 
    // https://stackoverflow.com/questions/23127498/persisting-values-in-javascript-object-across-browser-refresh
       
-   alert("cookie doing!")
+//    alert("cookie doing!")
    localStorage.clear()
    localStorage.sessionInStorage = JSON.stringify(session)
 
@@ -152,7 +152,7 @@ function printPage() {
 
 function proceed() {
     // https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_win_open4
-    session = JSON.parse(localStorage.sessionInStorage)
+    session = JSON.parse(localStorage.sessionInStorage) // Mozilla having issue with this - perhaps because the first time, there is no localstorage?
 
     for(let i=1;i<=session.numberOfHoles;i++) {
         var para = document.createElement("p")

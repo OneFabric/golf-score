@@ -26,10 +26,18 @@ p {
     top: 0;
 }
 
-#putter {
+#credits {
     position: relative;
     left: 1350px;
+    top: 500px;
+    font-size: small;
+}
+
+#putter {
+    position: relative;
+    left: 1250px;
     top: 450px;
+    font-size: small;
 }
 
 @font-face {

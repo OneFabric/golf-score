@@ -1,0 +1,38 @@
+body {
+    background-color: lightseagreen;
+    font-family: Hokjesgeest;
+    height:100%;
+    overflow:hidden;
+}
+
+#content {
+        position: relative;
+        left: 600px;
+}
+
+p { 
+    color: black;
+}
+
+#heading {
+    font-size: larger;
+}
+
+#box {
+    height: 995px;
+    width: 200px;
+    background-color: aqua;
+    position: absolute;
+    top: 0;
+}
+
+#putter {
+    position: relative;
+    left: 1350px;
+    top: 450px;
+}
+
+@font-face {
+    font-family: 'Hokjesgeest';
+    src: url('./res/Hokjesgeest-PDGB.ttf');
+}

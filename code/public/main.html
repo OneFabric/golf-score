@@ -2,29 +2,36 @@
 
 <!--https://hacks.mozilla.org/2016/02/implementing-content-security-policy/-->
 <head>
+    <link rel="stylesheet" href="main.css">
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self';
           script-src 'self' 'unsafe-inline'; style-src 'self'">
 </head>
 
 <body>
+        <div id="box"></div>
         <script type="text/javascript" src="main.js"></script>
 
-        <p>Setup</p>
+        <div id="content">
+            <div id="heading"><p>Setup</p></div> <br> <br>
 
-        <p>Number of Players: </p>
-        <input type="number" id="noOfPlayers" value="3">
+            <p>Number of Players: </p>
+            <input type="number" id="noOfPlayers" value="3">
+    
+            <p>Name of Session:</p>
+            <Input type="text" id="nameOfSession">
+    
+            <p>Number of holes:</p>
+            <input type="number" id="noOfHoles" value="18">
+    
+            <button
+                type="button"
+                onClick=submit(document.getElementById("noOfPlayers").value,document.getElementById("nameOfSession").value,document.getElementById("noOfHoles").value)>
+                Start session!
+            </button>
 
-        <p>Name of Session:</p>
-        <Input type="text" id="nameOfSession">
+        </div>
 
-        <p>Number of holes:</p>
-        <input type="number" id="noOfHoles" value="18">
-
-        <button
-            type="button"
-            onClick=submit(document.getElementById("noOfPlayers").value,document.getElementById("nameOfSession").value,document.getElementById("noOfHoles").value)>
-            Start session!
-        </button>
+        <div id="putter"> <img src="./res/putter.png">  </div>
 
 </body>
 

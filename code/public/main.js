@@ -81,8 +81,10 @@ function printPage() {
                 // while(!textFieldsAreEmpty()) {
                     for(let i=1;i<=session.numberOfPlayers;i++) {
                         name="pName"+i
+                        var nameValue = document.getElementById(name).value
+                        if(nameValue === null)  name = "undefined"
                         var p = {
-                            name:document.getElementById(name).value,
+                            name:nameValue,
                             score:0
                         } 
                         session.players.push(p)

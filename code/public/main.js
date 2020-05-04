@@ -82,7 +82,7 @@ function printPage() {
                     for(let i=1;i<=session.numberOfPlayers;i++) {
                         name="pName"+i
                         var nameValue = document.getElementById(name).value
-                        if(nameValue == null)  name = "undefined"+i
+                        if(nameValue == null)  nameValue = "undefined"+i
                         var p = {
                             name:nameValue,
                             score:0

@@ -200,7 +200,7 @@ function proceed() {
                     }
                 }
 
-                alert("The winner is "+winner+"!! Congratulation!!!!")
+                alert("The winner is "+winner+"!! Congratulations!!!!")
                 console.log(session)
             }
     )

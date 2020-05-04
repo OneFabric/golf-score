@@ -191,6 +191,7 @@ function proceed() {
                 }  
 
                 winner=""
+                tieWinner=""
                 bestScore=Number.MAX_VALUE
 
                 for(let i=0;i<session.numberOfPlayers;i++) {

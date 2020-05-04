@@ -200,7 +200,15 @@ function proceed() {
                     }
                 }
 
-                alert("The winner is "+winner+"!! Congratulations!!!!")
+                for(let i=0; i<session.numberOfPlayers; i++) {
+                    if(winner != session.players[i].name && session.players[i].score == bestScore ) {
+                        tieWinner = session.players[i].name + ", "
+                    }
+                }
+
+                tieWinner += winner;
+
+                alert("The winner is "+tieWinner+"!! Congratulations!!!!")
                 console.log(session)
             }
     )

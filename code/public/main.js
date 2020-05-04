@@ -203,7 +203,7 @@ function proceed() {
 
                 for(let i=0; i<session.numberOfPlayers; i++) {
                     if(winner != session.players[i].name && session.players[i].score == bestScore ) {
-                        tieWinner = session.players[i].name + ", "
+                        tieWinner += session.players[i].name + ", "
                     }
                 }
 
